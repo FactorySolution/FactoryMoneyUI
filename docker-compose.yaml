@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+
+   factorymoney-ui:
+      container_name: factorymoney-ui
+      image: factorymoney-ui
+      build:
+         context: .
+         dockerfile: Dockerfile
+      ports:
+         - "4200:4200"
+      restart: always
+      volumes:
+         - '.:/usr/src/app'
+         - '/usr/src/app/node_modules'
+ 

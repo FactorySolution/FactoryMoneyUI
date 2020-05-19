@@ -32,4 +32,5 @@ export class NavbarComponent implements OnInit {
       .catch(erro => this.errorHandler.handle(erro));
   }
 
+  
 }
